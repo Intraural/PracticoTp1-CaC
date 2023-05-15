@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    padding: 0px 20px 0;    
+}
+header {
+    background-color: rgb(71, 70, 70);
+    height: 55px;
+    padding: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.logo{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 30 40;
+    line-height: 55px;
+}
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item {
+    font-size: 12px;
+    margin: 0 4px;
+    line-height: 55px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover{
+    background-color: rgba(132, 133, 134, 0.281);
+    transition: 0.5s;
+
+}
+.nav-color {
+    color: rgb(197, 187, 187);
+    font-weight: bold;
+}
+.nav-color1 {
+    color: rgba(13, 187, 28, 0.801);
+    font-weight: bold;
+}
+
+.wrap{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(hawaii.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.wrap-texto {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-align: center;
+    width: 50%;
+    text-align: right;
+    margin-right: 50px;
+}
+.wrap-texto1 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-orador {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 13px 15px;
+    border-radius: 5px;
+    border-color: white;
+    margin: 20px 20px;
+
+}
+.btn-compra {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgba(13, 187, 28, 0.801);
+    padding: 13px 15px;
+    border-radius: 5px;
+    border-color: rgba(13, 187, 28, 0.801);
+    margin: 20px 20px;
+
+}
+.btn-compra:hover{
+    background-color: rgba(132, 133, 134, 0.281);
+    transition: 0.5s;
+}
+.btn-orador:hover{
+    background-color: rgba(132, 133, 134, 0.281);
+    transition: 0.5s;
+}
+.intervalo {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 85px;
+    padding: fixed;
+
+    
+}
+.intervalo1 {
+    color: rgb(71, 70, 70);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    width: max-content;
+    text-align: center;
+   
+}
+.intervalo2 {
+    color: rgb(71, 70, 70);
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    text-align: center;
+   
+}
+.boxcontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.card {
+    width: 320px;
+    height: 450px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+    border: 3px solid grey;
+    border-radius: 20px;
+}
+.card img, .card figcaption{
+    grid-area: stack;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card figcaption{
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(104, 104, 104, 0.836);
+    left: 0px;
+    bottom: 0%;
+    width: 100%;
+    padding: 3%;
+    color: white;
+    text-align: left;
+}
+figure:hover figcaption{
+    display: block;
+}
+.card-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+.card-text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: white;
+
+}
+.btnjava {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgba(251, 255, 1, 0.801);
+    padding: 8px 10px;
+    border-radius: 5px;
+    border-color: rgba(251, 255, 1, 0.801);
+    margin: 10px 10px;
+}
+.btnreact {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgba(1, 196, 255, 0.801);
+    padding: 8px 10px;
+    border-radius: 5px;
+    border-color: rgba(1, 196, 255, 0.801);
+    margin: 10px 10px;
+}
+.btnneg {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(131, 131, 131);
+    padding: 8px 10px;
+    border-radius: 5px;
+    border-color: rgb(131, 131, 131);
+    margin: 10px 10px;
+}
+.btnstats {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(206, 0, 0);
+    padding: 8px 10px;
+    border-radius: 5px;
+    border-color: rgb(206, 0, 0);
+    margin: 10px 10px;
+}
+
+.contenedorBsas {
+    width: 100%;
+    height: 450px;
+    display: flex;    
+    border: none;
+    padding: 30px;
+    justify-content: space-around;
+    margin-top: 0;
+    
+}
+.item {
+    width: 700px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    margin:10px;
+    padding: 0;
+    color: white;
+    float: left;
+    background-color: grey;
+}
+.itemb {
+    width: 700px;
+    height: 400px;
+    margin:10px;
+    padding: 0;
+    color: white;
+    float: left;
+    background-color: grey;
+}
+.img-hono {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.card-title {
+    margin:10px;
+    padding: 10;
+}
+.card-text {
+    margin:10px;
+    padding: 10;
+}
+.btnconmas {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 13px 15px;
+    border-radius: 5px;
+    border-color: white;
+    margin: 20px 20px; 
+}
+  
+.intervalo3 {
+    color: rgb(71, 70, 70);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px 0px;
+    text-align: center;
+}
+.intervalo4 {
+    color: rgb(71, 70, 70);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0px 0px;
+    text-transform: uppercase;
+    width: max-content;
+    text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 12%;
+    background-color: #4285c4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+.Formulario {
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    width: 600px;
+    height: 320px;
+    margin: auto;
+  }
+
+
+  .piepagina {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: #003b72;
+    padding: fixed;
+    top: 0;
+    left: 0;
+  }
+  .Footclass {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    height: center;
+  }
+  .Footclass:hover{
+    background-color: rgba(132, 133, 134, 0.281);
+    transition: 0.5s;
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
